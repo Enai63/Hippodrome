@@ -1,6 +1,6 @@
 package javarush.game.Hippodrome;
 
-public class Horse {
+public class Horse implements Action {
         private String name;
         private double speed;
         private double distance;
@@ -10,7 +10,6 @@ public class Horse {
             this.speed = speed;
             this.distance = distance;
         }
-
         public void move() {
             distance += speed * Math.random();
         }

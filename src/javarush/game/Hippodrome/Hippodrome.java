@@ -3,7 +3,7 @@ package javarush.game.Hippodrome;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Hippodrome {
+public class Hippodrome implements Action {
 
     private List<Horse> horses;
     static Hippodrome game;
@@ -14,7 +14,13 @@ public class Hippodrome {
         Horse light = new Horse( "light", 3.0, 0.0 );
         Horse Star = new Horse( "Star", 3.0, 0.0 );
         Horse Moon = new Horse( "Moon", 3.0, 0.0 );
+        Horse fury = new Horse( "fury", 3.0, 0.0 );
+        Horse jet = new Horse( "jet", 3.0, 0.0 );
+        Horse orion = new Horse( "orion", 3.0, 0.0 );
 
+        game.horses.add( fury );
+        game.horses.add( jet );
+        game.horses.add( orion );
         game.horses.add( light );
         game.horses.add( Star );
         game.horses.add( Moon );
